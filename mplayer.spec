@@ -14,38 +14,29 @@ BuildRequires:	OpenGL-devel
 BuildRequires:	SDL-devel
 BuildRequires:	alsa-lib-devel
 BuildRequires:	cdparanoia-III-devel
-BuildRequires:	crystalhd-devel
 BuildRequires:	dbus-glib-devel
-BuildRequires:	dirac-devel
 BuildRequires:	docbook-style-xsl
 BuildRequires:	faac-devel
 BuildRequires:	faad2-devel
-BuildRequires:	ffmpeg-devel
 BuildRequires:	freetype-devel
 BuildRequires:	giflib-devel
 BuildRequires:	jack-audio-connection-kit-devel
 BuildRequires:	lame-libs-devel
 BuildRequires:	libbluray-devel
 BuildRequires:	libdca-devel
-BuildRequires:	libdv-devel
 BuildRequires:	libdvdnav-devel
 BuildRequires:	libjpeg-devel
 BuildRequires:	libmad-devel
-BuildRequires:	libmpcdec-devel
 BuildRequires:	libpng-devel
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtheora-devel
-BuildRequires:	libvdpau-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	libx264-devel
 BuildRequires:	libxslt-progs
 BuildRequires:	ncurses-devel
-BuildRequires:	openal-soft-devel
 BuildRequires:	opencore-amr-devel
-BuildRequires:	openjpeg-devel
 BuildRequires:	pkg-config
 BuildRequires:	pulseaudio-devel
-BuildRequires:	schroedinger-devel
 BuildRequires:	speex-devel
 BuildRequires:	xorg-libX11-devel
 BuildRequires:	xorg-libXScrnSaver-devel
@@ -120,29 +111,20 @@ export CC
 	--disable-ggi				\
 	--disable-gui				\
 	--disable-libcdio			\
+	--disable-libdv				\
 	--disable-lirc				\
 	--disable-live				\
 	--disable-mga				\
+	--disable-musepack			\
+	--disable-openal			\
 	--disable-ossaudio			\
 	--disable-select			\
 	--disable-smb				\
 	--disable-svga				\
 	--disable-tdfxfb			\
 	--disable-xmga				\
-	--enable-alsa				\
-	--enable-bluray				\
-	--enable-cdparanoia			\
-	--enable-crystalhd			\
-	--enable-dvdnav				\
 	--enable-dynamic-plugins		\
-	--enable-fbdev				\
-	--enable-gl				\
-	--enable-pulse				\
 	--enable-runtime-cpudetection		\
-	--enable-sdl				\
-	--enable-vm				\
-	--enable-x11				\
-	--enable-xv				\
 	--enable-xvmc				\
 	--extra-cflags="%{rpmcflags}"		\
 	--extra-ldflags="%{rpmldflags}"		\
