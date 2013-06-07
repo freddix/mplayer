@@ -1,12 +1,12 @@
 Summary:	Movie player
 Name:		mplayer
-Version:	1.1
-Release:	3
+Version:	1.1.1
+Release:	1
 Epoch:		3
 License:	GPL
 Group:		Applications/Multimedia
 Source0:	ftp://ftp1.mplayerhq.hu/MPlayer/releases/MPlayer-%{version}.tar.xz
-# Source0-md5:	ac7bf1cfedc1c5c24bfc83107eefb1d9
+# Source0-md5:	39dd55f30eb5403f219a606e79a6648a
 Source1:	%{name}.desktop
 Patch0:		%{name}-link.patch
 URL:		http://www.mplayerhq.hu/
